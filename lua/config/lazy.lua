@@ -28,7 +28,9 @@ vim.opt.smartindent = true
 
 vim.opt.wrap = true
 -- Reserve a space in the gutter
-vim.opt.signcolumn = 'yes'
+vim.opt.number = true
+vim.opt.relativenumber = true;
+vim.opt.signcolumn = "number"
 
 -- Setup lazy.nvim
 require("lazy").setup({

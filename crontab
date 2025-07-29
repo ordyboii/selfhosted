@@ -1,0 +1,6 @@
+@reboot mount USB_DRIVE MOUNT_FOLDER
+
+@weekly rclone sync DOCKER_CONFIG BACKUP_LOCATION
+@weekly rclone sync DOCKER_DATA BACKUP_LOCATION
+
+@monthly apt update && apt upgrade -y && reboot
